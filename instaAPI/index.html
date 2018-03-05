@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Advanced APIs Lesson</title>
+
+  <!-- bootstrap -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <!-- css -->
+  <link rel="stylesheet" href="/style.css">
+  <!-- jQuery CDN -->
+  <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+</head>
+<body>
+
+  <div class="container-fluid sign-in-view">
+    <div class="row text-center">
+      <h1>Want did you post nearby?</h1>
+      <button class="btn btn-default">
+        <a href="https://instagram.com/oauth/authorize/?client_id=4252e75775ca4eb6a101abc9527459d4&redirect_uri=http://localhost:8000&scope=public_content&response_type=token">
+          Click Here
+        </a>
+      </button>
+    </div>
+  </div>
+
+  <div class="container-fluid text-center image-results-view">
+    <h1>Here are the images you posted nearby:</h1>
+    <div class="images"></div>
+  </div>
+
+  <!-- js -->
+  <script src="/app.js"></script>
+</body>
+</html>
